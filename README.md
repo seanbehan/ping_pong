@@ -4,6 +4,8 @@ A simple app for calculating ping pong player stats.
 
 _Currently in development_
 
+https://github.com/bseanvt/ping_pong/raw/master/public/images/Table-Tennis.png
+
 ### How to Contribute
 
 ```bash
