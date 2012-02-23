@@ -4,11 +4,12 @@ require "yaml"
 require "lib/initializers"
 
 require "sinatra"
+require "sinatra/reloader"
 require "sinatra/activerecord"
 
 set :database, ENV["DATABASE_URL"] || "sqlite3://db/db/development.sqlite3"
 
-ActiveRecord::Base.logger = Logger.new File.open("log/#{Sinatra.env}.log", 'a')
+ActiveRecord::Base.logger = Logger.new File.open("log/#{Sinatra.env}.log", 'a') unless Sinatra.env.production? # prob don't need this
 
 require "models/player"
 require "models/game"

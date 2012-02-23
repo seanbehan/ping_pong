@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "sinatra", "~> 1.3.2"
+gem "sinatra-reloader", "~> 1.0"
 gem "sinatra-activerecord", "~> 0.1.3"
 gem "rack-test",    "~> 0.6.1"
 
@@ -12,7 +13,6 @@ gem "activerecord", "~> 3.2.1"
 
 group :development, :test do
   gem "heroku"  
-  gem "sinatra-reloader", "~> 1.0"  
   gem "mysql", "~> 2.8.1"
   gem "sqlite3", "~> 1.3.5"
   gem "awesome_print", "~> 1.0.2"
