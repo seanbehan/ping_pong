@@ -2,7 +2,9 @@
 
 A simple app for calculating ping pong player stats.
 
-### Development
+_Currently in development_
+
+### How to Contribute
 
 ```bash
 
@@ -12,3 +14,6 @@ rake
 # => run tests
 
 ```
+
+### Instructions for Deploying to Heroku
+
