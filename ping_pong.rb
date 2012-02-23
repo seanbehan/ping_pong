@@ -4,7 +4,6 @@ require "yaml"
 require "lib/initializers"
 
 require "sinatra"
-require "sinatra/reloader"
 require "sinatra/activerecord"
 
 set :database, ENV["DATABASE_URL"] || "sqlite3://db/db/development.sqlite3"
