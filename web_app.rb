@@ -1,4 +1,3 @@
-
 class WebApp < Sinatra::Base
   # Homepage
   get '/' do
