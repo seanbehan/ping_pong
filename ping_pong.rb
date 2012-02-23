@@ -7,9 +7,7 @@ require "sinatra"
 require "sinatra/reloader"
 require "sinatra/activerecord"
 
-environment = YAML.load_file("config/database.yml")["#{Sinatra.env}"]
-
-set :database, environment["database"]
+set :database, ENV["DATABASE_URL"] || "sqlite3://db/db/development.sqlite3"
 
 ActiveRecord::Base.logger = Logger.new File.open("log/#{Sinatra.env}.log", 'a')
 
